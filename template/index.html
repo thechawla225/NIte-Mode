@@ -1,0 +1,51 @@
+
+<html>
+<head>
+    <title>
+        Nite Mode
+    </title>
+    {% load static %}
+
+    <link rel = "stylesheet" href = "{% static 'css/style.css' %}">
+</head>
+<body style = "background-color:blacsk">
+<h1 style = "background-color:black; color:white">Nite Mode</h1>
+<br>
+<div>
+    <img src= "{% static 'images/theimage.jpg' %}" >
+</div>
+
+<h1 style = "background-color:black; color:white">Upload file:</h1>
+
+
+<form style = "background-color:black; color:white" method="post" enctype="multipart/form-data" action="convert_pdf">
+
+{% csrf_token %}
+
+<div style = "display: flex; justify-content: center; align-items:center;">
+    <label className = "file-label" style="
+    background-color: blue;
+    height: 60px;
+    width: 250px;
+    text-align: center;
+    item-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;">
+
+
+    Choose file
+        
+    
+    <input name="filePath" type="file" accept = ".pdf" id="file">
+    </label> 
+<input type="submit" value="Submit" id= "submit">
+
+</div>
+<h2 style = "background-color:black; color:white">Donwload will start once file is converted</h2>
+<h2 style = "background-color:black; color:white"> Images are also Inverted so be careful about the results</h2>
+
+</form>
+<br>
+</body>
+</html>

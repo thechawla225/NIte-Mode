@@ -1,0 +1,44 @@
+input[type = file]
+{
+    display: none;
+    cursor: pointer;
+    
+}
+input[type=submit]
+{
+    color: white;
+    height: 60px;
+    width: 250px;
+    background-color: blue;
+    padding: 16px 32px;
+    font-size: 20px;
+    margin-left: 10px;
+    outline: none;
+    border: none;
+    
+    
+}
+.file-label
+{
+    color: white;
+    height: 60px;
+    width: 450px;
+    background: blue;
+    padding: 16px 32px;
+    font-size: 20px;
+    margin-left: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    
+    
+}
+
+  div {
+      display: flex;
+    justify-content: center;
+  }
+  img{
+      width: 60%;
+  }
+

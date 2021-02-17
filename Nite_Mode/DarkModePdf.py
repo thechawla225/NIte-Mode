@@ -32,7 +32,7 @@ def image_to_pdf(filename,inputpath,base_dir):
         file_handles[-1].write(img2pdf.convert(f2))
         merger.append(f1)
     
-    finalpath = os.path.join(base_dir,'media\Main.pdf') 
+    finalpath = os.path.join(base_dir,'media\DarkFile.pdf') 
     with open(finalpath, 'wb') as f:
             merger.write(f)
    
@@ -44,4 +44,5 @@ def image_to_pdf(filename,inputpath,base_dir):
         fh.close()
     
     return num_pages
+
 

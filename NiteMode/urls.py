@@ -24,7 +24,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     url('^$',views.index,name='homepage'),
-    url('convert_pdf',views.convert_pdf,name='convert_pdf'),
+    url('find_file_type',views.find_file_type,name='find_file_type'),
 
 ]
 

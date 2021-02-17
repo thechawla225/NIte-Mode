@@ -7,45 +7,43 @@
     {% load static %}
 
     <link rel = "stylesheet" href = "{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 </head>
-<body style = "background-color:blacsk">
-<h1 style = "background-color:black; color:white">Nite Mode</h1>
+<body style = "background-color:black">
+    <div class= "logo">
+        <i style = "color: whitesmoke" class="fas fa-moon fa-2x" class = "icon"></i>
+        <h1 style = "background-color:black; color:white" class = "text">Nite Mode</h1>
+    </div>
+
 <br>
-<div>
-    <img src= "{% static 'images/theimage.jpg' %}" >
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+
+<div style = "color: white">
+    <i style = "font-size: 300px;" class="fas fa-user-astronaut"></i>
 </div>
-
-<h1 style = "background-color:black; color:white">Upload file:</h1>
-
-
-<form style = "background-color:black; color:white" method="post" enctype="multipart/form-data" action="convert_pdf">
-
+<br>
+<br>
+<!-- This is where the form starts-->
+<form method="post" enctype="multipart/form-data" action="find_file_type">
 {% csrf_token %}
-
-<div style = "display: flex; justify-content: center; align-items:center;">
-    <label className = "file-label" style="
-    background-color: blue;
-    height: 60px;
-    width: 250px;
-    text-align: center;
-    item-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;">
-
-
-    Choose file
-        
-    
-    <input name="filePath" type="file" accept = ".pdf" id="file">
-    </label> 
-<input type="submit" value="Submit" id= "submit">
-
+<div>
+    <label class = "custom-file-upload" >
+        Choose file
+        <input name = "filePath" type="file" accept = ".pdf , application/vnd.ms-powerpoint , application/vnd.openxmlformats-officedocument.presentationml.presentation" id="file">
+    </label>
+    <input type="submit" value="Make it dark" id= "submit">
 </div>
-<h2 style = "background-color:black; color:white">Donwload will start once file is converted</h2>
-<h2 style = "background-color:black; color:white"> Images are also Inverted so be careful about the results</h2>
 
 </form>
+
+<!--form ends here-->
 <br>
 </body>
 </html>

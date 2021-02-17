@@ -1,44 +1,72 @@
+
+  div {
+    display: flex;
+  justify-content: center;
+}
+
 input[type = file]
 {
-    display: none;
-    cursor: pointer;
-    
+    display: none;   
+
 }
 input[type=submit]
 {
+    
+    color: black;
+    background-color:whitesmoke;
+    height: 65px;
+    width: 250px;
+    font-size: 28px;
+    font-family: sans-serif;
+    text-align: center;
+    margin-left: 10px;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid black;
+    
+    
+    
+}
+input[type=submit]:hover
+{
+    background-color: black ;
+    color: whitesmoke;
+    border: 2px solid white;
+}
+
+
+
+
+  .custom-file-upload {
     color: white;
+    background-color:black;
     height: 60px;
     width: 250px;
-    background-color: blue;
-    padding: 16px 32px;
-    font-size: 20px;
-    margin-left: 10px;
-    outline: none;
-    border: none;
-    
-    
-}
-.file-label
-{
-    color: white;
-    height: 60px;
-    width: 450px;
-    background: blue;
-    padding: 16px 32px;
-    font-size: 20px;
-    margin-left: 10px;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    
-    
-}
-
-  div {
-      display: flex;
+    font-size: 28px;
+    font-family: sans-serif;
+    text-align: center;
+    display: flex;
     justify-content: center;
-  }
-  img{
-      width: 60%;
-  }
+    align-items: center;
+    cursor: pointer;
+    border: 2px solid whitesmoke;
 
+}
+.custom-file-upload:hover
+{
+    background-color: whitesmoke;
+    color: black;
+    border: 2px solid black;
+}
+.logo{
+    display: inline-block;
+    width: 100%;
+}
+
+.icon, .text {
+    display:inline;
+}
+
+.text{
+    margin-left:10px;
+}  

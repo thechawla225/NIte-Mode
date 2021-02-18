@@ -20,11 +20,15 @@ from Nite_Mode import views
 from django.conf import settings
 from django.conf.urls.static import static
 
-
+handler404 = 'Nite_Mode.views.error_404'
+handler500 = 'Nite_Mode.views.error_500'
+handler403 = 'Nite_Mode.views.error_403'
+handler400 = 'Nite_Mode.views.error_400'
 urlpatterns = [
     path('admin/', admin.site.urls),
     url('^$',views.index,name='homepage'),
     url('find_file_type',views.find_file_type,name='find_file_type'),
+
 
 ]
 

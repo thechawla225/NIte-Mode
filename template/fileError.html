@@ -1,0 +1,47 @@
+
+<html>
+    <head>
+        <title>
+            Nite Mode
+        </title>
+        {% load static %}
+    
+        <link rel = "stylesheet" href = "{% static 'css/style.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    </head>
+    <body style = "background-color:black">
+        <div class= "logo">
+            <i style = "color: whitesmoke" class="fas fa-moon fa-2x" class = "icon"></i>
+            <h1 style = "background-color:black; color:white" class = "text">Nite Mode</h1>
+        </div>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <div style = "color: white">
+        <i style = "font-size: 300px;" class="fas fa-exclamation-circle"></i>
+    </div>
+    <br>
+    <br>
+    <br> 
+    <div style = "color: whitesmoke; font-size: 28px; font-family: sans-serif;">OOPS! Looks like you uploaded an unsupported file type</div>
+    <br>
+    <div style = "color: whitesmoke; font-size: 28px; font-family: sans-serif;">Supported file types are: '.pdf' and '.pptx'</div>
+    <br>
+        <div style = "color:whitesmoke">
+            <label className = "custom-file-upload">
+                Take me home
+            </label>
+        </div>
+    </body>
+    </html>
+    
+
+    <a style="text-decoration: none;" href="{% url 'homepage' %}"></a>Take me home</a>

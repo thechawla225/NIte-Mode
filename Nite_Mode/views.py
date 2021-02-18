@@ -19,6 +19,7 @@ def index(request):
     return render(request,'index.html',context)
 
 def find_file_type(request):
+
     fileObj=request.FILES['filePath']
     fsObj=FileSystemStorage()
     filePathName=fsObj.save(fileObj.name,fileObj)
@@ -31,6 +32,9 @@ def find_file_type(request):
         return convert_pdf(filename)
     elif(filecheck == 'application/vnd.openxmlformats-officedocument.presentationml.presentation'):
         return convert_pptx(BASE_DIR,filename,filePathName)
+    else:
+        return file_error(request)
+
 
 
 def convert_pdf(filename):
@@ -47,6 +51,27 @@ def convert_pdf(filename):
     response['Content-Disposition'] = 'attachment; filename=' + 'DarkFile.pdf'
 
     return response
+
+def error_404(request, exception):
+        data = {}
+        return render(request,'error.html', data)
+
+def error_500(request):
+        data = {}
+        return render(request,'error.html', data)
+
+def error_403(request, exception):
+        data = {}
+        return render(request,'error.html', data)
+
+def error_400(request,  exception):
+        data = {}
+        return render(request,'error.html', data)
+
+def file_error(request):
+    data = {}
+    return render(request,'fileError.html', data)
+
 
 
 

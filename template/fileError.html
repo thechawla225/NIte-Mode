@@ -36,12 +36,24 @@
     <div style = "color: whitesmoke; font-size: 28px; font-family: sans-serif;">Supported file types are: '.pdf' and '.pptx'</div>
     <br>
         <div style = "color:whitesmoke">
-            <label className = "custom-file-upload">
-                Take me home
-            </label>
+            <a style="text-decoration: none;" href="{% url 'homepage' %}">
+                <label style = "color: white;
+                background-color:black;
+                height: 62px;
+                width: 250px;
+                font-size: 28px;
+                font-family: sans-serif;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                border: 2px solid whitesmoke;
+            " >
+                    Take me home
+                </label></a>
+            
         </div>
     </body>
     </html>
     
-
-    <a style="text-decoration: none;" href="{% url 'homepage' %}"></a>Take me home</a>

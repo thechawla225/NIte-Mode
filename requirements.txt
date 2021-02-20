@@ -12,6 +12,7 @@ pdf2jpg==1.0
 pikepdf==2.5.2
 Pillow==8.1.0
 PyPDF2==1.26.0
+python-magic==0.4.22
 python-pptx==0.6.18
 pytz==2021.1
 requests==2.25.1

@@ -1,62 +1,65 @@
-
 <html>
-    <head>
-        <title>
-            Nite Mode
-        </title>
-        {% load static %}
-    
-        <link rel = "stylesheet" href = "{% static 'css/style.css' %}">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-      
-    </head>
-    <body style = "background-color:black">
-        
-        <div class= "logo">
-            <i style = "color: whitesmoke" class="fas fa-moon fa-2x" class = "icon"></i>
-            <h1 style = "background-color:black; color:white" class = "text">Nite Mode</h1>
-        </div>
-    
-    <br>
-    <br>
-    <br>
-    <br>
-    
-    <br>
-    <br>
-    <br>
-    <br>
-    
-    <div style = "color: white">
-        <i style = "font-size: 300px;" class="fas fa-exclamation-triangle"></i>
-    </div>
-    <br>
-    <br>
-    <br> 
-    <div style = "color: whitesmoke; font-size: 28px; font-family: sans-serif;">Looks like something went wrong</div>
-    <br>
-    <div style = "color: whitesmoke">
-        
-    <a style="text-decoration: none;" href="{% url 'homepage' %}">
-        <label style = "color: white;
-        background-color:black;
-        height: 62px;
-        width: 250px;
-        font-size: 28px;
-        font-family: sans-serif;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        border: 2px solid whitesmoke;
-    " >
-            Take me home
-        </label></a>
-        
-    </div>
-    </body>
-    </html>
-    
+  <head>
+    <title>Nite Mode</title>
+    {% load static %}
 
-    
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body style="background-color: black">
+    <div class="logo">
+      <i style="color: whitesmoke" class="fas fa-moon fa-2x" class="icon"></i>
+      <h1 style="background-color: black; color: white" class="text">
+        Nite Mode
+      </h1>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <div style="color: white">
+      <i style="font-size: 300px" class="fas fa-exclamation-triangle"></i>
+    </div>
+    <br />
+    <br />
+    <br />
+    <div style="color: whitesmoke; font-size: 28px; font-family: sans-serif">
+      Looks like something went wrong
+    </div>
+    <br />
+    <div style="color: whitesmoke">
+      <a style="text-decoration: none" href="{% url 'homepage' %}">
+        <label
+          style="
+            color: white;
+            background-color: black;
+            height: 62px;
+            width: 250px;
+            font-size: 28px;
+            font-family: sans-serif;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            border: 2px solid whitesmoke;
+          "
+        >
+          Take me home
+        </label></a
+      >
+    </div>
+  </body>
+</html>

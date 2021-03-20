@@ -4,7 +4,7 @@ from PIL import Image , ImageChops
 from PyPDF2 import PdfFileReader, PdfFileMerger
 import os
 
-
+maininputpath = ""
 file_handles = []
 
 def pdf_to_images(filename,inputpath,outputpath):
@@ -17,10 +17,10 @@ def image_to_pdf(filename,inputpath,base_dir):
     num_pages = pdf_reader.numPages
 
     merger = PdfFileMerger()
+    maininputpath = inputpath + "_dir" 
     inputpath = inputpath + "_dir/%d_" + filename + ".jpg"
     
     for i in range(num_pages):
-        
         image = Image.open(inputpath %i)
         image = ImageChops.invert(image)
         image = image.save('temp.jpg')
@@ -31,6 +31,7 @@ def image_to_pdf(filename,inputpath,base_dir):
         f2 = open("temp.jpg",'rb')
         file_handles[-1].write(img2pdf.convert(f2))
         merger.append(f1)
+        os.remove(inputpath %i)
     
     finalpath = os.path.join(base_dir,'media\DarkFile.pdf') 
     with open(finalpath, 'wb') as f:
@@ -38,11 +39,12 @@ def image_to_pdf(filename,inputpath,base_dir):
    
     f2.close()
     merger.close()
-    os.remove("temp.jpg")
 
     for fh in file_handles:
         fh.close()
     
+    print("Moving on to maininputpath")
+    os.removedirs(maininputpath)
     return num_pages
 
 

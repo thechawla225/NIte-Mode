@@ -12,7 +12,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 inputpath = os.path.join(BASE_DIR, 'media\\')
 outputpath = os.path.join(BASE_DIR, 'media')
-
+delpath = "../"
 
 def index(request):
     context = {'a': 1}
@@ -24,8 +24,11 @@ def find_file_type(request):
     for f in filelist:
         try:
             os.remove(os.path.join(outputpath, f))
-        except:
             os.removedirs(os.path.join(outputpath, f))
+
+        except:
+            pass
+
     fileObj = request.FILES['filePath']
     fsObj = FileSystemStorage()
     filePathName = fsObj.save(fileObj.name, fileObj)

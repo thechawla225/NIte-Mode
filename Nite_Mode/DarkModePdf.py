@@ -31,6 +31,10 @@ def image_to_pdf(filename,inputpath,base_dir):
         f2 = open("temp.jpg",'rb')
         file_handles[-1].write(img2pdf.convert(f2))
         merger.append(f1)
+        file_handles[-1].close()
+        print(file_handles[-1].name)
+        os.remove(file_handles[-1].name)
+        print("Deleted")
         os.remove(inputpath %i)
     
     finalpath = os.path.join(base_dir,'media\DarkFile.pdf') 
@@ -46,5 +50,3 @@ def image_to_pdf(filename,inputpath,base_dir):
     print("Moving on to maininputpath")
     os.removedirs(maininputpath)
     return num_pages
-
-

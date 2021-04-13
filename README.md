@@ -37,7 +37,7 @@ Want to contribute? Great!
 - Don't Forget to install the requirements.txt file
 
 ```sh
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 Then go to the project directory containing 'manage.py', open cmd and:
 

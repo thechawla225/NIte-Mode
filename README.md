@@ -1,8 +1,11 @@
+
+<h1 align = 'center'> Nite Mode </h1>
+
+<p align = 'center' > *_Welcome to the DARK SIDE_* </p>
+
+
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-## Nite Mode
-
-## _Welcome to the DARK SIDE_
 
 NITE MODE is an open source django based application that converts your files to DARK MODE
 
@@ -13,7 +16,7 @@ NITE MODE is an open source django based application that converts your files to
 Visit: https://nitemode.herokuapp.com/
 
 
-## Features
+<h1 align = 'center'> Features </h1>
 
 - Simple, Beautiful UI
 - No ads! Just Dark Mode!
@@ -21,14 +24,17 @@ Visit: https://nitemode.herokuapp.com/
 - Currently support: small pdf files and pptx files 
 - Beginner friendly 
 
-## Tech
+<br>
+<h1 align = 'center'> Tech </h1>
 
 Dillinger uses a number of open source projects to work properly:
 
 - Django - Python based web appliation
 - Many different python libraries
 
-## Development
+<br>
+
+<h1 align = 'center'> Development </h1>
 
 Want to contribute? Great!
 
@@ -45,7 +51,9 @@ Then go to the project directory containing 'manage.py', open cmd and:
 python manage.py runserver
 ```
 
-## License
+<br>
+
+<h1 align = 'center'> License </h1>
 
 NITE MODE is protected by the MIT License
 

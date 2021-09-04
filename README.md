@@ -1,8 +1,14 @@
 
-<h1 align = 'center'> Nite Mode </h1>
+<h1 align = 'center'> Nite Mode 👨‍🚀</h1>
 
+<br>
+<br>
+<p align ='center'> (｡▼皿▼) <p>
 <p align = 'center' > *_Welcome to the DARK SIDE_* </p>
 
+
+<br>
+<br>
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
@@ -16,7 +22,7 @@ NITE MODE is an open source django based application that converts your files to
 Visit: https://nitemode.herokuapp.com/
 
 
-<h1 align = 'center'> Features </h1>
+<h1 align = 'center'> Features 💡 </h1>
 
 - Simple, Beautiful UI
 - No ads! Just Dark Mode!
@@ -25,16 +31,20 @@ Visit: https://nitemode.herokuapp.com/
 - Beginner friendly 
 
 <br>
-<h1 align = 'center'> Tech </h1>
+<h1 align = 'center'> Tech 👨‍💻 </h1>
 
-Dillinger uses a number of open source projects to work properly:
+Nite Mode uses a number of open source projects to work properly:
 
-- Django - Python based web appliation
-- Many different python libraries
-
+<ul>
+  <li><a href = 'https://github.com/django/django'> Django <a> </li>
+  <li><a href = 'https://github.com/scanny/python-pptx'> Python-pptx <a> </li>
+  <li><a href = 'https://github.com/pankajr141/pdf2jpg'> pdf2jpg <a> </li>
+  <li><a href = 'https://github.com/josch/img2pdf'> img2pdf <a> </li>
+</ul>
+    
 <br>
 
-<h1 align = 'center'> Development </h1>
+<h1 align = 'center'> 🔨 Development 🔨</h1>
 
 Want to contribute? Great!
 
@@ -53,7 +63,11 @@ python manage.py runserver
 
 <br>
 
-<h1 align = 'center'> License </h1>
+<h1 align = 'center'>📄 License 📄</h1>
 
 NITE MODE is protected by the MIT License
-
+    
+<br>
+<br>
+    
+<h1 align = 'center'>Made with ❤️ by <a href = 'https://github.com/thechawla225'>Ankit Chawla</a></h1>

@@ -65,7 +65,12 @@ python manage.py runserver
 
 <h1 align = 'center'>📄 License 📄</h1>
 
-NITE MODE is protected by the MIT License
+<p align  = 'center'>NITE MODE is protected by the MIT License</p>
+
+<br>
+<br>
+ <br>
+ <p align  ='center' ><img  src = 'https://media.giphy.com/media/4SBtIAp4sEDxC/giphy.gif?cid=790b7611dd1ac26fbc0e8a15bc86051cee0e39639fbc3ccf&rid=giphy.gif&ct=g' width="300" height="300"></p>
     
 <br>
 <br>
